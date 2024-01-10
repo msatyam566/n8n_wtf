@@ -1,18 +1,17 @@
 @use 'sass:math';
 
 @mixin theme {
-	--color-primary-h: var(--prim-color-primary-h);
-	--color-primary-s: var(--prim-color-primary-s);
-	--color-primary-l: 68%;
+	--color-primary-h: 197;
+--color-primary-s: 72%;
+--color-primary-l: 66%;
 
-	// Primary tokens
+/* Primary tokens */
+--prim-color-primary-shade-1: hsl(var(--color-primary-h), calc(var(--color-primary-s) - 10%), calc(var(--color-primary-l) - 10%));
+--prim-color-primary: hsl(var(--color-primary-h), var(--color-primary-s), var(--color-primary-l));
+--prim-color-primary-tint-1: hsl(var(--color-primary-h), calc(var(--color-primary-s) + 10%), calc(var(--color-primary-l) + 10%));
+--prim-color-primary-tint-2: hsl(var(--color-primary-h), calc(var(--color-primary-s) + 15%), calc(var(--color-primary-l) + 15%));
+--prim-color-primary-tint-3: hsl(var(--color-primary-h), calc(var(--color-primary-s) + 20%), calc(var(--color-primary-l) + 20%));
 
-	// Primary
-	--color-primary-shade-1: var(--prim-color-primary-shade-100);
-	--color-primary: var(--prim-color-primary);
-	--color-primary-tint-1: var(--prim-color-primary-tint-200);
-	--color-primary-tint-2: var(--prim-color-primary-tint-250);
-	--color-primary-tint-3: var(--prim-color-primary-tint-300);
 
 	// Secondary
 	--color-secondary-shade-1: var(--prim-color-secondary-shade-100);

@@ -188,7 +188,7 @@ export default defineComponent({
 		},
 	},
 	async mounted() {
-		setPageTitle('n8n - Templates');
+		setPageTitle('wtf - Templates');
 		void this.loadCategories();
 		void this.loadWorkflowsAndCollections(true);
 		void this.usersStore.showPersonalizationSurvey();

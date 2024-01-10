@@ -517,13 +517,15 @@ export default defineComponent({
 <style lang="scss" module>
 .sideMenu {
 	position: relative;
-	height: 100%;
+	height: calc(100% - 20px); /* Adjusted height with margin-top */
 	border-right: var(--border-width-base) var(--border-style-base) var(--color-foreground-base);
 	transition: width 150ms ease-in-out;
 	width: $sidebar-expanded-width;
+	margin-top: 20px; /* Set your desired margin-top value */
+
 	.logo {
 		height: $header-height;
-		display: flex;
+		display: none;
 		align-items: center;
 		padding: var(--spacing-xs);
 
@@ -531,6 +533,7 @@ export default defineComponent({
 			position: relative;
 			left: 1px;
 			height: 20px;
+			display: none;
 		}
 	}
 

@@ -364,7 +364,7 @@ export default defineComponent({
 		};
 	},
 	mounted() {
-		setPageTitle(`n8n - ${this.pageTitle}`);
+		setPageTitle(`wtf - ${this.pageTitle}`);
 
 		void this.handleAutoRefreshToggle();
 		document.addEventListener('visibilitychange', this.onDocumentVisibilityChange);

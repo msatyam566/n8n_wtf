@@ -116,9 +116,9 @@ export default defineComponent({
 	watch: {
 		collection(collection: ITemplatesCollection) {
 			if (collection) {
-				setPageTitle(`n8n - Template collection: ${collection.name}`);
+				setPageTitle(`wtf - Template collection: ${collection.name}`);
 			} else {
-				setPageTitle('n8n - Templates');
+				setPageTitle('wtf - Templates');
 			}
 		},
 	},
