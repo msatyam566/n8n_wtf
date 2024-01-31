@@ -523,11 +523,12 @@ export const schema = {
 	},
 	port: {
 		format: Number,
-		default: 5678,
+		default: 3000,
 		arg: 'port',
 		env: 'N8N_PORT',
 		doc: 'HTTP port n8n can be reached',
 	},
+
 	listen_address: {
 		format: String,
 		default: '0.0.0.0',
